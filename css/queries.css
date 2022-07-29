@@ -1,5 +1,5 @@
 /* 1440px (Desktop) */
-@media (max-width:90em) {
+@media (max-width:59em) {
   body {
     overflow-y: scroll;
     height: 100%;
@@ -18,7 +18,7 @@
 
 /* 375px (Mobiles */
 
-@media (max-width:23em) {
+@media (max-width:28em) {
   .accordion {
     grid-template-columns: 1fr;
     margin: 9.6rem 4.8rem;
