@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
-  /* background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)); */
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -51,4 +51,68 @@ body {
 
 .inner {
   overflow: hidden;
+}
+
+.faq-container {
+  padding: 5rem;
+  padding-bottom: 2rem;
+}
+
+.title {
+  color: hsl(238, 29%, 16%);
+  font-size: 2.8rem;
+  padding-bottom: 2rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  padding-left: 0;
+  color: hsl(237, 12%, 33%);
+  transition: all 0.3s;
+}
+
+label:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.down-arrow {
+  margin-left: -2rem;
+  transition: all;
+}
+
+.content {
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  color: hsl(240, 6%, 50%);
+}
+
+input {
+  display: none;
+}
+
+input:checked~.content {
+  height: 6.4rem;
+  opacity: 1;
+}
+
+input:checked~label {
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+}
+
+input:checked~.down-arrow {
+  transform: rotate(180deg);
+  transition: all 0.3s;
 }

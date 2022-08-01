@@ -1,9 +1,9 @@
-const item = document.querySelectorAll(".item");
+// const item = document.querySelectorAll(".item");
 
-for (let i = 0; i < item.length; i++) {
+// for (let i = 0; i < item.length; i++) {
 
-  item[i].addEventListener("click", function () {
-    // alert("item clicked")
-    this.classList.toggle("open");
-  });
-}
+//   item[i].addEventListener("click", function () {
+//     // alert("item clicked")
+//     this.classList.toggle("open");
+//   });
+// }
